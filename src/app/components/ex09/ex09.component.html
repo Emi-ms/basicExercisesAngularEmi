@@ -1,16 +1,45 @@
 <div class="pricipal-section">
-<h1>Exercice 9</h1>
-<h2>*ngFor - Classes</h2>
-<b>Employees:</b>
-<table class="table-bordered table-hover">
-  <tr>
-    <th>Name</th><th>Position</th><th>Salary</th>
-  </tr>
-  <tr *ngFor="let e of employees">
-    <td>{{ e.name }}</td>
-    <td>{{ e.position }}</td>
-    <td>{{ e.salary }}</td>
-  </tr>
-</table>
-</div>
+  <h1>Exercice 9</h1>
+  <h2>*ngFor - Classes</h2>
 
+  <div class="sb-2">
+    <label for="sortingCriteria" class="form-label">Sort by:</label>
+    <select class="form-select form-select-sm" name="sortingCriteria" [(ngModel)]="sortingCriteria"
+      (change)="sortEmployees(sortingCriteria)" id="sortingCriteria">
+
+      <option value="" selected>Select a sorting criteria</option>
+      <option value="name">Name</option>
+      <option value="position">Position</option>
+      <option value="salary">Salary</option>
+    </select>
+  </div>
+
+  <div class="table-responsive-md">
+    <table class="table table-striped table-hover table-borderless table-primary align-middle">
+      <thead class="table-light">
+        <caption>
+          Employees:
+        </caption>
+        <tr>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        <tr class="table-primary" *ngFor="let e of employees">
+          <td scope="row">{{e.name}}</td>
+          <td>{{e.position}}</td>
+          <td>{{e.salary}}</td>
+        </tr>
+
+      </tbody>
+      <tfoot>
+
+      </tfoot>
+    </table>
+  </div>
+
+
+
+</div>
