@@ -2,13 +2,11 @@
     <h1>Exercice 6</h1>
     <h2>Fahrenheit/Celsius conversion</h2>
     Celcius:
-    <input [(ngModel)]="celcius" (keyup)="converToFahrenheit()" type="text" pattern="[0-9]*" [ngClass]="{ 'ngInvalid': !isNumber(celcius) }">
+    <input [(ngModel)]="celcius" (keyup)="converToFahrenheit()" type="text" pattern="[0-9]*" [ngClass]="{'ngInvalid': !isNumber(celcius) }">
     <br>
     Fahrenheit:
-    <input [(ngModel)]="fahrenheit" (keyup)="convertToCelcius()" type="text" pattern="[0-9]*" [ngClass]="{ 'ngInvalid': !isNumber(fahrenheit) }">
+    <input [(ngModel)]="fahrenheit" (keyup)="convertToCelcius()" type="text" pattern="[0-9]*" [ngClass]="{'ngInvalid': !isNumber(fahrenheit) }">
     <br>
     <button class="btn btn-dark" (click)="clear()">Reset</button>
 
-   
-    
 </div>
