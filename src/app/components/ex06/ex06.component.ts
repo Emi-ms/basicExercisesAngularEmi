@@ -49,6 +49,7 @@ export class Ex06Component {
   }
 
   isNumber(value: any): boolean {
+    console.log(value);
     return !isNaN(parseFloat(value));
 }
 }
