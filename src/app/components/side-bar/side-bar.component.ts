@@ -18,6 +18,7 @@ import { RouterModule} from '@angular/router';
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" routerLink="/ex8">Exercise 8</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" routerLink="/ex9">Exercise 9</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" routerLink="/ex10">Exercise 10</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" routerLink="/exam">Exam</a>
                 </div>
             </div>
   `,

@@ -30,20 +30,7 @@ export class Ex09Component {
 
   sortEmployees(sortCriteria: string): void {
     console.log(sortCriteria);
-    // switch (sortCriteria) {
-    //   case 'name':
-    //     this.employees.sort((a, b) => a.name.localeCompare(b.name));
-    //     break;
-    //   case 'position':
-    //     this.employees.sort((a, b) => a.position.localeCompare(b.position));
-    //     break;
-    //   case 'salary':
-    //     this.employees.sort((a, b) => a.salary - b.salary);
-    //     break;
-    //   default:
-    //     break;
-    // }
-    // type emplKey = keyof Employee;
+
     let key: emplKey = this.sortingCriteria;
     console.log(key);
 

@@ -8,6 +8,38 @@
 
 }
 
+.is-invalid{
+    border: 1px solid red;
+    background-color: red;
+}
+
+.registration-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+
+}
+
+.form-wrapper{
+    margin: 0 auto;
+    width: 30%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-top: 20px;
+}
+
+.button{
+    margin-top: 20px;
+margin-left: 150px;
+}
+
 #emi-photo{
     width: 50px;
     height: 50px;
